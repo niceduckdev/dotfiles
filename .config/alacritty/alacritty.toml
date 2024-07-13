@@ -1,12 +1,12 @@
 [font]
-size = 12.0
-normal = { family = "GohuFont" }
+size = 15.0
+normal = { family = "Firacode", style = "Semibold" }
 
 [window]
 padding = { x = 10, y = 10 }
 
 [cursor]
-style = { shape = "Beam" }
+style = { shape = "Block" }
 
 # Default colors
 [colors.primary]

@@ -1,0 +1,25 @@
+* {
+    all: unset;
+    font-family: "FiraCode Semibold";
+}
+
+.bar {
+    background-color: #282828;
+    color: #ebdbb2;
+    padding: 8px;
+}
+
+.module {
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.workspace-button-empty {
+    color: #756e5a;
+}
+.workspace-button-open {
+    color: #c7b996;
+}
+.workspace-button-focus {
+    color: #ebdbb2;
+}

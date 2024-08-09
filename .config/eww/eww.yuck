@@ -1,0 +1,86 @@
+(deflisten workspaces "modules/workspaces.sh")
+(defwidget workspaces []
+    (box :valign "center" :height 25
+        (literal :content workspaces :class "module")
+    )
+)
+
+(defpoll time :interval "5s" "modules/time.sh")
+(defwidget time []
+    (box :valign "center" :height 25
+        (label :text time :class "module")
+    )
+)
+
+(defpoll date :interval "5s" "modules/date.sh")
+(defwidget date []
+    (box :valign "center" :height 25
+        (label :text date :class "module")
+    )
+)
+
+(defpoll volume :interval "0.1s" "modules/volume.sh")
+(defwidget volume []
+    (box :valign "center" :height 25
+        (label :text volume :class "module")
+    )
+)
+
+(defpoll battery :interval "5s" "modules/battery.sh")
+(defwidget battery []
+    (box :valign "center" :height 25
+        (label :text battery :class "module")
+    )
+)
+
+(defpoll bluetooth :interval "5s" "modules/bluetooth.sh")
+(defwidget bluetooth []
+    (box :valign "center" :height 25
+        (label :text bluetooth :class "module")
+    )
+)
+
+(defpoll network :interval "5s" "modules/network.sh")
+(defwidget network []
+    (box :valign "center" :height 25
+        (eventbox :onclick "alacritty -e 'nmtui'" (button :class "module" network))
+    )
+)
+
+(defwidget left []
+    (box :orientation "h" :space-evenly false :halign "start" :spacing 10
+        (time)
+		(date)
+    )
+)
+
+(defwidget center []
+    (box :orientation "h" :space-evenly false :halign "center" :spacing 10
+        (workspaces)
+    )
+)
+
+(defwidget right []
+    (box :orientation "h" :space-evenly false :halign "end" :spacing 10
+        (volume)
+        (battery)
+        (network)
+    )
+)
+
+(defwidget bar []
+    (centerbox :orientation "h"
+        (left)
+        (center)
+        (right)  
+    )
+)
+
+(defwindow bar
+    :monitor 0
+    :windowtype "dock"
+    :geometry (geometry :width "100%" :height "40px" :anchor "bottom center")
+    :reserve (struts :side "bottom" :distance "5.5%"
+)
+    (bar)
+)

@@ -21,10 +21,10 @@ print_workspaces() {
             class="empty"
         fi
 
-        output="$output (eventbox :cursor \"pointer\" (button :class \"workspace-button-$class\" :onclick \"bspc desktop -f $desktop\" \"$desktop\"))"
+        output="$output (eventbox :cursor \"pointer\" (button :class \"workspace-button $class\" :onclick \"bspc desktop -f $desktop\" \"$desktop\"))"
     done
 
-    echo "(box :spacing \"10\" :halign \"center\" :height 25 :valign \"center\" :space-evenly false $output)"
+    echo "(box :spacing \"10\" :halign \"center\" :valign \"center\" :space-evenly false $output)"
 }
 
 print_workspaces

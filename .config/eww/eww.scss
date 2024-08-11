@@ -14,12 +14,17 @@
     font-size: 20px;
 }
 
-.workspace-button-empty {
+.workspace-button {
+    font-size: 22px;
+    padding: 0 5px;
+}
+
+.empty {
     color: #756e5a;
 }
-.workspace-button-open {
+.open {
     color: #c7b996;
 }
-.workspace-button-focus {
+.focus {
     color: #ebdbb2;
 }

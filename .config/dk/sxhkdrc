@@ -1,0 +1,17 @@
+super + space
+	rofi -show drun
+
+super + t
+	alacritty
+
+super + {j,k}
+	dkcmd win focus {next,prev}
+
+super + q
+	dkcmd win kill
+
+super + shift + {h,j,k,l}
+	dkcmd win resize {w=-80,h=+80,h=-80,w=+80}
+
+super + {_,shift + }{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+	dkcmd ws {view,follow} {1-9,10}

@@ -20,12 +20,12 @@ window {
 }
 
 listview {
-    border: 3px 0 0;    
+    border: 3px 0 0; 
     scrollbar: false;
 }
 
 element {
-    padding: 5 15;
+    padding: 2px 15px;
 }
 
 element.normal.normal {
@@ -35,6 +35,7 @@ element.normal.normal {
 
 element.selected.normal {
     background-color: #3c3836;
+    text-color: #fe8019;
 }
 
 element.alternate.normal {

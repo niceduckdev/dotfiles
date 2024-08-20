@@ -1,0 +1,44 @@
+#!/bin/sh
+
+riverctl keyboard-layout be
+riverctl default-attach-mode bottom
+
+riverctl map normal Super T spawn alacritty
+riverctl map normal Super Space spawn "rofi -show drun"
+
+riverctl map normal Super Q close
+
+riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
+riverctl map normal Super L send-layout-cmd rivertile "main-ratio +0.05"
+
+for i in $(seq 1 9)
+do
+    tags=$((1 << ($i - 1)))
+
+    riverctl map normal Super $i set-focused-tags $tags
+
+    riverctl map normal Super+Shift $i set-view-tags $tags
+
+    riverctl map normal Super+Control $i toggle-focused-tags $tags
+
+    riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
+done
+
+for mode in normal locked
+do
+    riverctl map $mode None XF86AudioRaiseVolume  spawn 'pamixer -i 5'
+    riverctl map $mode None XF86AudioLowerVolume  spawn 'pamixer -d 5'
+    riverctl map $mode None XF86AudioMute         spawn 'pamixer --toggle-mute'
+
+    riverctl map $mode None XF86MonBrightnessUp   spawn 'brightnessctl set +5%'
+    riverctl map $mode None XF86MonBrightnessDown spawn 'brightnessctl set 5%-'
+done
+
+riverctl background-color 0x002b36
+riverctl border-color-focused 0x93a1a1
+riverctl border-color-unfocused 0x586e75
+
+riverctl set-repeat 50 300
+
+riverctl default-layout rivertile
+rivertile -view-padding 6 -outer-padding 6 &

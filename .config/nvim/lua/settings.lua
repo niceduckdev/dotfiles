@@ -6,7 +6,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = true
 vim.opt.fillchars = { eob = " " }
-vim.o.mouse = "v"
+vim.o.mouse = "a"
 
 vim.bo.autoindent = false
 vim.bo.smartindent = false

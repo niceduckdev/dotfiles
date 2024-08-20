@@ -1,8 +1,21 @@
 return {
-	"nvim-telescope/telescope-file-browser.nvim",
-	dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-	config = function()
-		local telescope = require("telescope.builtin")
-		vim.keymap.set("n", "<C-n>", ":Telescope file_browser path=%:p:h select_buffer=true<CR>", {})
-	end
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+		vim.g.loaded_netrw = 1
+		vim.g.loaded_netrwPlugin = 1
+		vim.keymap.set("n", "<C-n>", ":NvimTreeFocus<CR>", { silent = true })
+		vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>", { silent = true })
+		require'nvim-tree'.setup {
+			renderer = {
+    			icons = {
+      				show = {
+        				file = false,
+        				folder = false,
+        				folder_arrow = false,
+        				git = false
+      				}
+    			}
+  			}
+		}
+    end
 }

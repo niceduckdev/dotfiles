@@ -9,4 +9,4 @@ else
       volume="$(pamixer --get-volume)%"
 fi
 
-echo "VOL $volume"
+echo "$volume"

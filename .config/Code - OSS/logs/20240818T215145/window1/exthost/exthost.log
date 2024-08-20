@@ -1,0 +1,37 @@
+2024-08-18 21:51:48.945 [info] Extension host with pid 5543 started
+2024-08-18 21:51:48.945 [info] Skipping acquiring lock for /home/kaj/.config/Code - OSS/User/workspaceStorage/841c61c466936a0d9b2e70d017045a46.
+2024-08-18 21:51:49.209 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-08-18 21:51:49.328 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-08-18 21:51:49.455 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-08-18 21:51:50.217 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-08-18 21:51:50.221 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2024-08-18 21:51:50.292 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-08-18 21:51:50.412 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-08-18 21:51:50.576 [info] Eager extensions activated
+2024-08-18 21:51:50.634 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 21:51:50.638 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 21:52:09.928 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:http'
+2024-08-18 22:04:12.232 [info] ExtensionService#_doActivateExtension bradlc.vscode-tailwindcss, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 22:16:02.840 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-08-18 22:16:02.863 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-08-18 22:16:03.648 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-08-18 22:17:13.206 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2024-08-18 22:17:13.227 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2024-08-18 23:59:16.524 [info] Extension host terminating: renderer closed the MessagePort
+2024-08-18 23:59:16.563 [error] Canceled: Canceled
+	at new I (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:144:34990)
+	at S.U (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:6023)
+	at z.<computed>.F.charCodeAt.T.CharCode.DollarSign.z.<computed> (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:3107)
+	at f.g (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203861)
+	at f.executeCommand (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203299)
+	at A.registerCommand.description (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:202623)
+	at f.h (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:204400)
+	at f.g (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203392)
+	at f.executeCommand (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203299)
+	at Object.executeCommand (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:164:23051)
+	at pE (/home/kaj/.vscode-oss/extensions/bradlc.vscode-tailwindcss-0.12.6/dist/extension.js:40:8764)
+	at Ne (/home/kaj/.vscode-oss/extensions/bradlc.vscode-tailwindcss-0.12.6/dist/extension.js:4:1357)
+	at me (/home/kaj/.vscode-oss/extensions/bradlc.vscode-tailwindcss-0.12.6/dist/extension.js:3:6845)
+	at Immediate.<anonymous> (/home/kaj/.vscode-oss/extensions/bradlc.vscode-tailwindcss-0.12.6/dist/extension.js:3:6723)
+	at process.processImmediate (node:internal/timers:476:21) setContext undefined
+2024-08-18 23:59:16.573 [info] Extension host with pid 5543 exiting with code 0

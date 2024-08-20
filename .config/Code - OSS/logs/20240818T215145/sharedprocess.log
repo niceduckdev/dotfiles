@@ -1,0 +1,18 @@
+2024-08-18 22:04:11.306 [info] Getting Manifest... bradlc.vscode-tailwindcss
+2024-08-18 22:04:11.335 [info] Installing extension: bradlc.vscode-tailwindcss {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/kaj/.vscode-oss/extensions/extensions.json","path":"/home/kaj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.91.1","date":"2024-07-16T08:23:01.341Z"}}
+2024-08-18 22:04:11.784 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code-oss/resources/app/out/bootstrap-amd.js
+- /usr/lib/code-oss/resources/app/out/bootstrap-fork.js
+- 
+2024-08-18 22:04:11.784 [info] Extension signature verification is not done: bradlc.vscode-tailwindcss
+2024-08-18 22:04:11.930 [info] Extracted extension to file:///home/kaj/.vscode-oss/extensions/bradlc.vscode-tailwindcss-0.12.6: bradlc.vscode-tailwindcss
+2024-08-18 22:04:11.946 [info] Renamed to /home/kaj/.vscode-oss/extensions/bradlc.vscode-tailwindcss-0.12.6
+2024-08-18 22:04:11.972 [info] Extension installed successfully: bradlc.vscode-tailwindcss vscode-userdata:/home/kaj/.vscode-oss/extensions/extensions.json
+2024-08-18 22:04:11.984 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/kaj/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/kaj/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code-oss/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code-oss/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code-oss/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code-oss/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code-oss/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code-oss/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)

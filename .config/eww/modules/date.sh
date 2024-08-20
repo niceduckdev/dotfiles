@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "DAT $(date '+%d/%m/%Y')"
+echo "$(date '+%d/%m/%Y')"

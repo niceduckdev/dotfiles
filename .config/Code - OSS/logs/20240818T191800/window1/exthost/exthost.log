@@ -1,0 +1,30 @@
+2024-08-18 19:18:03.881 [info] Extension host with pid 7463 started
+2024-08-18 19:18:03.881 [info] Skipping acquiring lock for /home/kaj/.config/Code - OSS/User/workspaceStorage/841c61c466936a0d9b2e70d017045a46.
+2024-08-18 19:18:04.114 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-08-18 19:18:04.236 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-08-18 19:18:04.292 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-08-18 19:18:04.678 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-08-18 19:18:04.685 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2024-08-18 19:18:04.810 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-08-18 19:18:05.000 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-08-18 19:18:05.612 [info] Eager extensions activated
+2024-08-18 19:18:05.696 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 19:18:05.700 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 19:18:08.550 [info] Extension host terminating: renderer closed the MessagePort
+2024-08-18 19:18:08.569 [info] Extension host with pid 7463 exiting with code 0
+2024-08-18 19:18:10.142 [info] Extension host with pid 7818 started
+2024-08-18 19:18:10.142 [info] Skipping acquiring lock for /home/kaj/.config/Code - OSS/User/workspaceStorage/8a8fd5e60041e859142588f914eaf3a7.
+2024-08-18 19:18:10.231 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-08-18 19:18:10.245 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-08-18 19:18:10.297 [info] Eager extensions activated
+2024-08-18 19:18:10.376 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 19:18:10.380 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-08-18 19:18:13.828 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2024-08-18 19:18:15.409 [info] ExtensionService#_doActivateExtension Vue.volar, startup: false, activationEvent: 'onLanguage:plaintext'
+2024-08-18 19:18:15.509 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-08-18 19:18:15.578 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'api', root cause: Vue.volar
+2024-08-18 19:28:49.422 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-08-18 19:42:41.190 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2024-08-18 20:08:31.636 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+2024-08-18 21:00:52.673 [info] Extension host terminating: renderer closed the MessagePort
+2024-08-18 21:00:52.685 [info] Extension host with pid 7818 exiting with code 0

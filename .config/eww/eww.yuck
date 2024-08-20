@@ -1,42 +1,48 @@
-(deflisten workspaces "modules/workspaces.sh")
-(defwidget workspaces []
-    (box :valign "center"
-        (literal :content workspaces :class "module")
-    )
-)
-
 (defpoll time :interval "10s" "modules/time.sh")
 (defwidget time []
-    (box :valign "center"
-        (label :text time :class "module")
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "CLK" :class "accent")
+        (label :text time)
     )
 )
 
 (defpoll date :interval "60s" "modules/date.sh")
 (defwidget date []
-    (box :valign "center"
-        (label :text date :class "module")
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "DAT" :class "accent")
+        (label :text date)
     )
 )
 
-(defpoll volume :interval "0.5s" "modules/volume.sh")
+(deflisten workspaces "modules/workspaces.sh")
+(defwidget workspaces []
+    (box
+        (literal :content workspaces :class "module")
+    )
+)
+
+
+(defpoll volume :interval "0.1s" "modules/volume.sh")
 (defwidget volume []
-    (box :valign "center"
-        (label :text volume :class "module")
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "VOL" :class "accent")
+        (label :text volume)
     )
 )
 
 (defpoll battery :interval "10s" "modules/battery.sh")
 (defwidget battery []
-    (box :valign "center"
-        (label :text battery :class "module")
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "BAT" :class "accent")
+        (label :text battery)
     )
 )
 
 (defpoll network :interval "10s" "modules/network.sh")
 (defwidget network []
-    (box :valign "center"
-        (button :class "module" network)
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "NET" :class "accent")
+        (label :text network)
     )
 )
 
@@ -55,7 +61,7 @@
 
 (defwidget right []
     (box :orientation "h" :space-evenly false :halign "end" :spacing 10
-        (volume)
+		(volume)
         (battery)
         (network)
     )
@@ -73,7 +79,7 @@
     :monitor 0
     :windowtype "dock"
     :geometry (geometry :width "100%" :anchor "top center")
-    :reserve (struts :side "top" :distance "5%"
+    :reserve (struts :side "top" :distance "3.5%"
 )
     (bar)
 )

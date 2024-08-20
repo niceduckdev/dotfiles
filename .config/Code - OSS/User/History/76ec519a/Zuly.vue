@@ -1,0 +1,27 @@
+<script setup>
+import { RouterLink } from 'vue-router';
+
+const pages = [
+    ["Home", "/"],
+    ["Info", "/info"],
+    ["Stamblad", "/stamblad"],
+    ["Afdelingen", "/afdelingen"],
+    ["Contact", "/contact"],
+    ["Kalender", "/kalender"],
+];
+</script>
+
+<template>
+    <nav class="flex flex-col sm:flex-row justify-between items-center mb-2">
+        <RouterLink to="/">
+        <h1 class="font-extrabold m-0 text-2xl text-slate-900">Chiro Stam</h1>
+    </RouterLink>
+    <ul class="flex gap-1 items-center flex-wrap">
+        {
+            pages.map((page) => (
+                <NavigationLink href={page[1]}>{page[0]}</NavigationLink>
+            ))
+        }
+    </ul>
+</nav>
+</template>

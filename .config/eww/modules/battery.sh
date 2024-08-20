@@ -9,5 +9,5 @@ else
     icon="↓"
 fi
 
-echo "BAT $percentage% $icon"
+echo "$percentage% $icon"
 

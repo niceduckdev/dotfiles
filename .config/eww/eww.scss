@@ -6,7 +6,7 @@
 .bar {
     background-color: #282828;
     color: #ebdbb2;
-    padding: 8px;
+    padding: 0 8px;
 }
 
 .module {
@@ -14,8 +14,12 @@
     font-size: 20px;
 }
 
+.accent {
+  color: #fe8019;
+}
+
 .workspace-button {
-    font-size: 22px;
+    font-size: 20px;
     padding: 0 5px;
 }
 
@@ -23,8 +27,8 @@
     color: #756e5a;
 }
 .open {
-    color: #c7b996;
+    color: #ebdbb2;
 }
 .focus {
-    color: #ebdbb2;
+    color: #fe8019;
 }

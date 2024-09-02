@@ -1,0 +1,13 @@
+neovim
+firefox
+alacritty
+sxhkd
+picom
+xwallpaper
+rofi
+git
+eza
+eww
+pamixer
+upower
+gh

@@ -11,3 +11,4 @@ eww
 pamixer
 upower
 gh
+tlp

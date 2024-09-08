@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 [ -n "$command" ] && pamixer $command
 mute=$(pamixer --get-mute)

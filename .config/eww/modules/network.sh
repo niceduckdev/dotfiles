@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 if nmcli -t -f TYPE connection show --active | grep -q "802-3-ethernet"; then
     echo "ethernet"

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 contains() {
     for e in $1; do

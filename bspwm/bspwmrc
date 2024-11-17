@@ -1,14 +1,9 @@
-#!/usr/bin/sh
+#!/bin/bash
 
 setxkbmap be
 xsetroot -cursor_name left_ptr
 
-pgrep sxhkd || sxhkd &
-picom -b
-
 xwallpaper --zoom $HOME/pictures/kamp.png
-dunst &
-eww open bar
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 

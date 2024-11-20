@@ -15,7 +15,7 @@ window {
     background-color: @background;
     border: 3px;
     width: 600px;
-    height: 350px;
+    height: 438px;
     padding: 0;
 }
 

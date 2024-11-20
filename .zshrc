@@ -4,11 +4,10 @@ PS1="%n@%m (%1d) -> "
 # aliases
 alias ls="eza -l -a"
 alias vim="nvim"
-alias pdf="$HOME/dotfiles/scripts/pdf.sh"
 
 alias dotfiles="cd $HOME/dotfiles"
-alias school="cd $HOME/documents/school/periode-2"
-alias chiro="cd $HOME/documents/chiro"
+alias school="cd $HOME/school/periode-2"
+alias chiro="cd $HOME/chiro"
 
 # set neovim as default editor
 export EDITOR="nvim"
@@ -24,3 +23,14 @@ if [ -f '/home/kaj/downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/kaj
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/kaj/downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/kaj/downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+
+# autostart
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+	$HOME/start.sh
+fi

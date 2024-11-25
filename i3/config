@@ -1,5 +1,8 @@
 font pango:FiraCode 12
 
+exec --no-startup-id xsetroot -cursor_name left_ptr
+exec --no-startup-id xwallpaper --zoom $HOME/pictures/kamp-2024.png
+
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
@@ -19,8 +22,9 @@ set $right l
 
 floating_modifier $mod
 tiling_drag modifier titlebar
+focus_follows_mouse no
 
-bindsym $mod+t exec alacritty
+bindsym $mod+t exec --no-startup-id alacritty
 bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun
 
@@ -89,10 +93,10 @@ mode "resize" {
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym Mod1+r mode "default"
+        bindsym $mod+r mode "default"
 }
 
-bindsym Mod1+r mode "resize"
+bindsym $mod+r mode "resize"
 
 bar {
         status_command i3status

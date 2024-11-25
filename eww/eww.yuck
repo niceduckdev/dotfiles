@@ -1,0 +1,39 @@
+(include "modules.yuck")
+
+(defwidget left []
+    (box :orientation "h" :space-evenly false :halign "start" :spacing 10
+        (time)
+		(date)
+    )
+)
+
+(defwidget center []
+    (box :orientation "h" :space-evenly false :halign "center" :spacing 10
+        (workspaces)
+    )
+)
+
+(defwidget right []
+    (box :orientation "h" :space-evenly false :halign "end" :spacing 10
+		(volume)
+        (battery)
+        (network)
+    )
+)
+
+(defwidget bar []
+    (centerbox :orientation "h"
+        (left)
+        (center)
+        (right)
+    )
+)
+
+(defwindow bar
+    :monitor 0
+    :windowtype "dock"
+    :geometry (geometry :width "100%" :anchor "top center")
+    :reserve (struts :side "top" :distance "3.75%"
+)
+    (bar)
+)

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+setxkbmap be
+pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+
+pgrep -x picom > /dev/null || picom -b --config $HOME/.config/bspwm/picom.conf
+xwallpaper --zoom $HOME/pictures/kamp.png
+
+xsetroot -cursor_name left_ptr
+
+bspc monitor -d 1 2 3 4 5 6 7 8
+bspc config border_width 3
+bspc config focused_border_color "#ebdbb2"
+bspc config normal_border_color "#3c3836"
+bspc config window_gap 5
+bspc config split_ratio 0.5
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+# bspc rule -a Thunar state=floating

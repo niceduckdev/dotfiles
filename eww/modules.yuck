@@ -1,0 +1,47 @@
+(defpoll time :interval "10s" "modules/time.sh")
+(defwidget time []
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "clk" :class "accent")
+        (label :text time)
+    )
+)
+
+(defpoll date :interval "60s" "modules/date.sh")
+(defwidget date []
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "dat" :class "accent")
+        (label :text date)
+    )
+)
+
+(deflisten workspaces "modules/workspaces.sh")
+(defwidget workspaces []
+    (box
+        (literal :content workspaces :class "module")
+    )
+)
+
+
+(defpoll volume :interval "0.1s" "modules/volume.sh")
+(defwidget volume []
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "vol" :class "accent")
+        (label :text volume)
+    )
+)
+
+(defpoll battery :interval "10s" "modules/battery.sh")
+(defwidget battery []
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "bat" :class "accent")
+        (label :text battery)
+    )
+)
+
+(defpoll network :interval "10s" "modules/network.sh")
+(defwidget network []
+    (box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "net" :class "accent")
+        (label :text network)
+    )
+)

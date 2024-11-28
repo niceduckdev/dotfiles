@@ -1,32 +1,40 @@
-font pango:FiraCode 12
-
+#######################
+###    AUTOSTART    ###
+#######################
 exec --no-startup-id xsetroot -cursor_name left_ptr
-exec --no-startup-id xwallpaper --zoom $HOME/pictures/kamp-2024.png
+exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/kamp.png
 
-exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
+exec --no-startup-id eww open bar
 
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+######################
+###    SETTINGS    ###
+######################
+floating_modifier $mod
+focus_follows_mouse no
 
+#########################
+###    KEYBINDINGS    ###
+#########################
 set $mod Mod4
 set $up k
 set $down j
 set $left h
 set $right l
 
-floating_modifier $mod
-tiling_drag modifier titlebar
-focus_follows_mouse no
-
 bindsym $mod+t exec --no-startup-id alacritty
-bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun
+bindsym Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+bindsym $mod+q kill
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
+
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +25%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 25%-
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -42,11 +50,7 @@ bindsym $mod+n split h
 bindsym $mod+b split v
 
 bindsym $mod+f fullscreen toggle
-bindsym $mod+v floating toggle
-
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+v floating toggle resize set 800 600, move position center
 
 set $ws1 "1"
 set $ws2 "2"
@@ -83,21 +87,34 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-mode "resize" {
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
 
 bindsym $mod+r mode "resize"
+mode "resize" {
+	bindsym $left resize shrink width 10 px or 10 ppt
+    bindsym $down resize grow height 10 px or 10 ppt
+    bindsym $up resize shrink height 10 px or 10 ppt
+    bindsym $right resize grow width 10 px or 10 ppt
 
-bar {
-        status_command i3status
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
+
+########################
+###    APPEARANCE    ###
+########################
+font pango:Fira Code Semibold 14
+gaps inner 5
+
+client.focused          #EBDBB2 #282828 #FE8019 #EBDBB2 #EBDBB2
+client.focused_inactive #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.unfocused        #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.urgent           #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.placeholder      #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.background       #282828
+
+###################
+###    RULES    ###
+###################
+for_window [class="Nm-connection-editor"] floating enable, resize set 800 600, move position center
+default_border pixel 4
+default_floating_border pixel 4

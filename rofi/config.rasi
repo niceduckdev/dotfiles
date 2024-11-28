@@ -14,8 +14,8 @@ configuration {
 window {
     background-color: @background;
     border: 3px;
-    width: 400px;
-    height: 320px;
+    width: 450px;
+    height: 350px;
     padding: 0;
 }
 
@@ -25,7 +25,7 @@ listview {
 }
 
 element {
-    padding: 2px 10px;
+    padding: 5px 10px;
 }
 
 element.normal.normal {
@@ -34,7 +34,7 @@ element.normal.normal {
 }
 
 element.selected.normal {
-    background-color: #3c3836;
+	background-color: #282828;
     text-color: #fe8019;
 }
 
@@ -50,7 +50,7 @@ element.alternate.active {
 
 inputbar {
     text-color: @foreground;
-    padding: 5 10;
+    padding: 10 10;
     children: [ prompt, textbox-prompt-sep, entry, case-indicator ];
 }
 

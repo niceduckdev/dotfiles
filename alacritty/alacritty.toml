@@ -1,21 +1,29 @@
+##################
+###    FONT    ###
+##################
 [font]
 size = 10
 normal = { family = "Firacode", style = "SemiBold" }
 
+####################
+###    WINDOW    ###
+####################
 [window]
 padding = { x = 10, y = 10 }
 
+####################
+###    CURSOR    ###
+####################
 [cursor]
 style = { shape = "Beam" }
 
-# Default colors
+####################
+###    COLORS    ###
+####################
 [colors.primary]
-# hard contrast background = = '#1d2021'
 background = '#282828'
-# soft contrast background = = '#32302f'
 foreground = '#ebdbb2'
 
-# Normal colors
 [colors.normal]
 black   = '#282828'
 red     = '#cc241d'
@@ -26,7 +34,6 @@ magenta = '#b16286'
 cyan    = '#689d6a'
 white   = '#a89984'
 
-# Bright colors
 [colors.bright]
 black   = '#928374'
 red     = '#fb4934'

@@ -1,0 +1,35 @@
+* {
+    all: unset;
+    font-family: "Fira Code";
+	font-weight: 600;
+}
+
+.bar {
+    background-color: #282828;
+    color: #ebdbb2;
+    padding: 5px
+}
+
+.module {
+    padding: 2.5px 10px;
+    font-size: 20px;
+	// background-color: #3c3836;
+}
+
+.accent {
+  color: #fe8019;
+}
+
+.workspace-button {
+	padding: 0 5px;
+}
+
+.empty {
+    color: #756e5a;
+}
+.open {
+    color: #ebdbb2;
+}
+.focus {
+    color: #fe8019;
+}

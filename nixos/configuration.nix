@@ -72,7 +72,8 @@
   	environment.systemPackages = with pkgs; [
 		git zsh neovim killall eza pfetch gh
 		glab gcc discord zip unzip pcmanfm
-		lxappearance papirus-icon-theme htop
+		lxappearance papirus-icon-theme gotop
+		fzf
 		
 		obsidian jetbrains.rider jetbrains.idea-ultimate
 		ciscoPacketTracer8 dotnetCorePackages.sdk_8_0_2xx

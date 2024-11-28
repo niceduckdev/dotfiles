@@ -1,16 +1,15 @@
 (include "modules/apps.yuck")
-(include "modules/lock.yuck")
 (include "modules/time.yuck")
 (include "modules/date.yuck")
 
 (include "modules/volume.yuck")
 (include "modules/battery.yuck")
 (include "modules/network.yuck")
+(include "modules/lock.yuck")
 
 (defwidget left []
     (box :orientation "h" :space-evenly false :halign "start" :spacing 5
 		(apps)
-		(lock)
         (time)
 		(date)
     )
@@ -27,6 +26,7 @@
 		(volume)
         (battery)
         (network)
+		(lock)
     )
 )
 

@@ -9,6 +9,7 @@ PS1="%n@%m (%1d) -> "
 alias ls="eza -l"
 alias tree="eza --tree"
 alias vim="nvim"
+alias top="gotop"
 
 #######################
 ###    SHORTCUTS    ###

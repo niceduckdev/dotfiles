@@ -1,5 +1,5 @@
 (defwidget lock []
-	(eventbox :onclick "i3lock && disown" :cursor "pointer"
+	(eventbox :onclick "i3lock" :cursor "pointer"
 		(box :class "module" :space-evenly "false" :spacing "10"
 			(label :text "lock" :class "accent")
 		)

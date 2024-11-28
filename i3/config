@@ -103,7 +103,7 @@ mode "resize" {
 ###    APPEARANCE    ###
 ########################
 font pango:Fira Code Semibold 14
-gaps inner 5
+gaps inner 10
 
 client.focused          #EBDBB2 #282828 #FE8019 #EBDBB2 #EBDBB2
 client.focused_inactive #3C3836 #282828 #EBDBB2 #3C3836 #3C3836

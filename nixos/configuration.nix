@@ -72,12 +72,12 @@
   	environment.systemPackages = with pkgs; [
 		git zsh neovim killall eza pfetch gh
 		glab gcc discord zip unzip pcmanfm
-		lxappearance papirus-icon-theme gotop
-		fzf
+		lxappearance papirus-icon-theme fzf
+		python3 vscodium nodejs
 		
 		obsidian jetbrains.rider jetbrains.idea-ultimate
 		ciscoPacketTracer8 dotnetCorePackages.sdk_8_0_2xx
-		mono umlet 
+		mono umlet putty 
   	];
   	fonts.packages = with pkgs; [
 		fira-code

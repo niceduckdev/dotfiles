@@ -4,7 +4,7 @@
 exec --no-startup-id xsetroot -cursor_name left_ptr
 exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/kamp.png
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/dotfiles/scripts/lock.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id eww open bar
@@ -48,6 +48,7 @@ bindsym $mod+Shift+$right move right
 
 bindsym $mod+n split h
 bindsym $mod+b split v
+bindsym $mod+s layout toggle split
 
 bindsym $mod+f fullscreen toggle
 bindsym $mod+v floating toggle resize set 800 600, move position center
@@ -103,7 +104,7 @@ mode "resize" {
 ###    APPEARANCE    ###
 ########################
 font pango:Fira Code Semibold 14
-gaps inner 10
+gaps inner 6
 
 client.focused          #EBDBB2 #282828 #FE8019 #EBDBB2 #EBDBB2
 client.focused_inactive #3C3836 #282828 #EBDBB2 #3C3836 #3C3836

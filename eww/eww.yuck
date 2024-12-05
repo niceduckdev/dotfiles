@@ -1,4 +1,5 @@
 (include "modules/apps.yuck")
+(include "modules/workspaces.yuck")
 (include "modules/time.yuck")
 (include "modules/date.yuck")
 
@@ -12,14 +13,11 @@
 		(apps)
         (time)
 		(date)
+		(workspaces)
     )
 )
 
-(defwidget center []
-    (box :orientation "h" :space-evenly false :halign "center" :spacing 5
-		; (workspaces)
-    )
-)
+(defwidget center [] (box :orientation "h" :space-evenly false :halign "center" :spacing 5))
 
 (defwidget right []
     (box :orientation "h" :space-evenly false :halign "end" :spacing 5
@@ -39,7 +37,7 @@
 )
 
 (defwindow bar
-    :monitor 0
+    :monitor "<primary>"
     :windowtype "dock"
     :geometry (geometry :width "100%" :anchor "bottom center")
     :reserve (struts :side "bottom" :distance "3.75%"

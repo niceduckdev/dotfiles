@@ -9,7 +9,11 @@ PS1="%n@%m (%1d) -> "
 alias ls="eza -l"
 alias tree="eza --tree"
 alias vim="nvim"
-alias top="gotop"
+
+alias ga="git add ."
+alias gc="git commit"
+alias gps="git push"
+alias gpu="git pull"
 
 #######################
 ###    SHORTCUTS    ###

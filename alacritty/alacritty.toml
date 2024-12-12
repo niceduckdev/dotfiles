@@ -3,7 +3,7 @@
 ##################
 [font]
 size = 10
-normal = { family = "Firacode", style = "SemiBold" }
+normal = { family = "FiraCode NerdFont", style = "SemiBold" }
 
 ####################
 ###    WINDOW    ###

@@ -6,7 +6,7 @@ configuration {
 
 * {
     highlight: none;
-    font: "Fira Code Semibold 20";
+    font: "Fira Code NerdFont Semibold 20";
 	background: #282828;
 	foreground: #ebdbb2;
 }

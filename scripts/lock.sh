@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-i3lock --nofork --show-failed-attempts --ignore-empty-password --color 282828
+i3lock --nofork -u --ignore-empty-password --color 282828

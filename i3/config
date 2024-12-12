@@ -2,7 +2,8 @@
 ###    AUTOSTART    ###
 #######################
 exec --no-startup-id xsetroot -cursor_name left_ptr
-exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/kamp.png
+# exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/kamp.png
+exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/dark.png
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/dotfiles/scripts/lock.sh
 exec --no-startup-id nm-applet
@@ -91,10 +92,10 @@ bindsym $mod+Shift+r restart
 
 bindsym $mod+r mode "resize"
 mode "resize" {
-	bindsym $left resize shrink width 10 px or 10 ppt
-    bindsym $down resize grow height 10 px or 10 ppt
-    bindsym $up resize shrink height 10 px or 10 ppt
-    bindsym $right resize grow width 10 px or 10 ppt
+	bindsym $left resize shrink width 50 px or 10 ppt
+    bindsym $down resize grow height 50 px or 10 ppt
+    bindsym $up resize shrink height 50 px or 10 ppt
+    bindsym $right resize grow width 50 px or 10 ppt
 
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
@@ -117,5 +118,6 @@ client.background       #282828
 ###    RULES    ###
 ###################
 for_window [class="Nm-connection-editor"] floating enable, resize set 800 600, move position center
+for_window [class="VirtualBox"] floating enable, resize set 800 600, move position center
 default_border pixel 4
 default_floating_border pixel 4

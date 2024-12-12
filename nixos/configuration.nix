@@ -14,6 +14,7 @@
 	########################
 	networking.hostName = "laptoep";
 	networking.networkmanager.enable = true;
+	hardware.bluetooth.enable = false;
 
 	#############################
 	###    TIME & KEYBOARD    ###
@@ -34,8 +35,7 @@
 			extraPackages = with pkgs; [
 				rofi i3status i3lock xss-lock
 				picom xwallpaper alacritty
-				networkmanagerapplet maim xclip
-				eww jq brightnessctl
+				maim xclip eww jq brightnessctl
 			];
 		};
   		xkb = {
@@ -49,9 +49,13 @@
 	######################
 	services.tlp.enable = true;
 	services.printing.enable = true;
+	services.flatpak.enable = true;
 	hardware.pulseaudio.enable = true;
 	security.rtkit.enable = true;
 	virtualisation.virtualbox.host.enable = true;
+
+	xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+	xdg.portal.enable = true;
 
 	###################
 	###    USERS    ###
@@ -59,7 +63,7 @@
   	users.users.kaj = {
     	isNormalUser = true;
     	description = "kaj";
-    	extraGroups = [ "networkmanager" "wheel" ];
+    	extraGroups = [ "networkmanager" "wheel" "dialout" ];
   	};
   	users.defaultUserShell = pkgs.zsh;
 
@@ -70,17 +74,16 @@
   	programs.firefox.enable = true;
   	programs.zsh.enable = true;
   	environment.systemPackages = with pkgs; [
-		git zsh neovim killall eza pfetch gh
-		glab gcc discord zip unzip pcmanfm
-		lxappearance papirus-icon-theme fzf
+		git zsh neovim killall eza pfetch gcc
+		discord zip unzip papirus-icon-theme fzf
 		python3 vscodium nodejs
 		
-		obsidian jetbrains.rider jetbrains.idea-ultimate
-		ciscoPacketTracer8 dotnetCorePackages.sdk_8_0_2xx
-		mono umlet putty 
-  	];
+		obsidian jetbrains.rider ciscoPacketTracer8
+		dotnetCorePackages.sdk_8_0_2xx
+		mono umlet ipcalc jetbrains.jdk
+  	]; 
   	fonts.packages = with pkgs; [
-		fira-code
+		fira-code-nerdfont
 	];
 
 	###################################

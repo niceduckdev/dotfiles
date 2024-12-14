@@ -15,7 +15,7 @@ padding = { x = 10, y = 10 }
 ###    CURSOR    ###
 ####################
 [cursor]
-style = { shape = "Beam" }
+style = { shape = "Block" }
 
 ####################
 ###    COLORS    ###

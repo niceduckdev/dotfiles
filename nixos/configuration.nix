@@ -76,7 +76,7 @@
   	environment.systemPackages = with pkgs; [
 		git zsh neovim killall eza pfetch gcc
 		discord zip unzip papirus-icon-theme fzf
-		python3 vscodium nodejs
+		python3 vscodium nodejs spotify
 		
 		obsidian jetbrains.rider ciscoPacketTracer8
 		dotnetCorePackages.sdk_8_0_2xx

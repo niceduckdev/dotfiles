@@ -10,11 +10,6 @@ alias ls="eza -l"
 alias tree="eza --tree"
 alias vim="nvim"
 
-alias ga="git add ."
-alias gc="git commit"
-alias gps="git push"
-alias gpu="git pull"
-
 #######################
 ###    SHORTCUTS    ###
 #######################

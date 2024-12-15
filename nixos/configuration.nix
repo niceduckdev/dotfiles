@@ -54,7 +54,7 @@
 	security.rtkit.enable = true;
 	virtualisation.virtualbox.host.enable = true;
 
-	xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+	xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-kde ];
 	xdg.portal.enable = true;
 
 	###################

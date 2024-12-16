@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 function get_active_workspace() {
 	echo "$(echo $(i3-msg -t get_workspaces | jq -r '.[] | select(.focused==true).name'))"

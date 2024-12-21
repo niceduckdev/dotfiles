@@ -13,3 +13,5 @@ vim.bo.smartindent = false
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.opt.clipboard="unnamedplus"
+
+vim.opt.shortmess:append("I")

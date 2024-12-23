@@ -2,6 +2,7 @@
 ###    PROMPT    ###
 ####################
 PS1="%n@%m (%1d) -> "
+clear
 
 #####################
 ###    ALIASES    ###
@@ -14,7 +15,7 @@ alias vim="nvim"
 ###    SHORTCUTS    ###
 #######################
 alias dotfiles="cd $HOME/dotfiles"
-alias school="cd $HOME/school/periode-2"
+alias school="cd $HOME/school"
 alias chiro="cd $HOME/chiro"
 alias dev="cd $HOME/dev"
 
@@ -32,8 +33,8 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[3~" delete-char
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000
+SAVEHIST=1000
 setopt SHARE_HISTORY
 
 ####################

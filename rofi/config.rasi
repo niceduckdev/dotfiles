@@ -35,7 +35,7 @@ element.normal.normal {
 
 element.selected.normal {
 	background-color: #282828;
-    text-color: #fe8019;
+    text-color: #d79921;
 }
 
 element.alternate.normal {

@@ -2,11 +2,14 @@ configuration {
     display-drun: "";
     drun-display-format: "{name}";
     show-icons: false;
+
+ 	kb-row-down: "Alt+j,Down";
+  	kb-row-up: "Alt+k,Up";
 }
 
 * {
     highlight: none;
-    font: "Fira Code Semibold 20";
+    font: "Fira Code Semibold 22";
 	background: #282828;
 	foreground: #ebdbb2;
 }
@@ -14,8 +17,8 @@ configuration {
 window {
     background-color: @background;
     border: 3px;
-    width: 450px;
-    height: 350px;
+    width: 500px;
+    height: 400px;
     padding: 0;
 }
 

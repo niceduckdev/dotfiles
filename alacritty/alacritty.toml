@@ -2,7 +2,7 @@
 ###    FONT    ###
 ##################
 [font]
-size = 10
+size = 12
 normal = { family = "FiraCode", style = "SemiBold" }
 
 ####################
@@ -15,7 +15,7 @@ padding = { x = 10, y = 10 }
 ###    CURSOR    ###
 ####################
 [cursor]
-style = { shape = "Block" }
+style = { shape = "Beam" }
 
 ####################
 ###    COLORS    ###

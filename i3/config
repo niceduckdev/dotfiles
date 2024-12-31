@@ -4,7 +4,6 @@
 exec --no-startup-id xsetroot -cursor_name left_ptr
 exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/dark.png
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/dotfiles/scripts/lock.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id eww open bar
@@ -29,12 +28,17 @@ bindsym $mod+space exec --no-startup-id rofi -show drun
 bindsym Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
 bindsym $mod+q kill
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 10%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 10%-
 bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +15%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 15%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +20%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20%-
+
+bindsym $mod+s exec --no-startup-id "rofi -modi 'semesters:semesters' -show semesters -p '' -theme-str 'prompt { enabled: false; }'"
+bindsym $mod+c exec --no-startup-id "rofi -modi 'courses:courses' -show courses -p '' -theme-str 'prompt { enabled: false; }'"
+bindsym $mod+o exec --no-startup-id "alacritty --working-directory $HOME/school/current-course"
+bindsym $mod+p exec --no-startup-id "alacritty -e sh -c 'nnn $HOME/school/current-course'
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -48,10 +52,9 @@ bindsym $mod+Shift+$right move right
 
 bindsym $mod+n split h
 bindsym $mod+b split v
-bindsym $mod+s layout toggle split
 
 bindsym $mod+f fullscreen toggle
-bindsym $mod+v floating toggle resize set 800 600, move position center
+bindsym $mod+v floating toggle resize set 800 800, move position center
 
 set $ws1 "1"
 set $ws2 "2"

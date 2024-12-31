@@ -15,7 +15,7 @@ alias vim="nvim"
 ###    SHORTCUTS    ###
 #######################
 alias dotfiles="cd $HOME/dotfiles"
-alias school="cd $HOME/school"
+alias school="cd $HOME/school/semester-1"
 alias chiro="cd $HOME/chiro"
 alias dev="cd $HOME/dev"
 

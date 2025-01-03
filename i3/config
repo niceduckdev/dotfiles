@@ -3,8 +3,6 @@
 #######################
 exec --no-startup-id xsetroot -cursor_name left_ptr
 exec --no-startup-id xwallpaper --zoom $HOME/dotfiles/wallpapers/dark.png
-
-exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id eww open bar
 

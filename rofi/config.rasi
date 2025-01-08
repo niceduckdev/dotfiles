@@ -1,4 +1,5 @@
 configuration {
+	modi: ["drun"];
     display-drun: "";
     drun-display-format: "{name}";
     show-icons: false;
@@ -9,7 +10,7 @@ configuration {
 
 * {
     highlight: none;
-    font: "Fira Code Semibold 22";
+    font: "Fira Code Semibold 18";
 	background: #282828;
 	foreground: #ebdbb2;
 }
@@ -18,7 +19,7 @@ window {
     background-color: @background;
     border: 3px;
     width: 500px;
-    height: 400px;
+    height: 500px;
     padding: 0;
 }
 

@@ -1,7 +1,0 @@
-(defpoll battery :interval "10s" "scripts/battery.sh")
-(defwidget battery []
-    (box :class "module" :space-evenly "false" :spacing "10"
-		(label :text "bat" :class "accent")
-        (label :text battery)
-    )
-)

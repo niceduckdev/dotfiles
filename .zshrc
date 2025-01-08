@@ -32,14 +32,12 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^[[3~" delete-char
 
+bindkey "^[h" backward-char
+bindkey "^[j" down-line-or-history
+bindkey "^[k" up-line-or-history
+bindkey "^[l" forward-char
+
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt SHARE_HISTORY
-
-####################
-###    STARTX    ###
-####################
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-	exec startx $(which i3)
-fi

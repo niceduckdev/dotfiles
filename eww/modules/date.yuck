@@ -1,7 +1,0 @@
-(defpoll date :interval "60s" "scripts/date.sh")
-(defwidget date []
-    (box :class "module" :space-evenly "false" :spacing "10"
-		(label :text "dat" :class "accent")
-        (label :text date)
-    )
-)

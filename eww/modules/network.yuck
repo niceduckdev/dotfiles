@@ -1,9 +1,0 @@
-(defpoll network :interval "10s" "scripts/network.sh")
-(defwidget network []
-	(eventbox :onclick "alacritty -e sh -c \"nmtui\" && disown" :cursor "pointer"
-    	(box :class "module" :space-evenly "false" :spacing "10"
-			(label :text "net" :class "accent")
-        	(label :text network)
-    	)
-	)
-)

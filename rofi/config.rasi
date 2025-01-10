@@ -12,7 +12,7 @@ configuration {
 
 * {
     highlight: none;
-    font: "Fira Code Semibold 18";
+    font: "Fira Code Semibold 24";
 	background: #282828;
 	foreground: #ebdbb2;
 }
@@ -21,7 +21,7 @@ window {
     background-color: @background;
     border: 3px;
     width: 500px;
-    height: 500px;
+    height: 350px;
     padding: 0;
 }
 

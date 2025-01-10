@@ -6,6 +6,8 @@ configuration {
 
  	kb-row-down: "Alt+j,Down";
   	kb-row-up: "Alt+k,Up";
+  	kb-move-char-back: "Alt+h,Left";
+  	kb-move-char-forward: "Alt+l";
 }
 
 * {

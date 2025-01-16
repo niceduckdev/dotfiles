@@ -33,10 +33,10 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +20%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 20%-
 
-bindsym $mod+s exec --no-startup-id "rofi -modi 'semesters:semesters' -show semesters -p '' -theme-str 'prompt { enabled: false; }'"
-bindsym $mod+c exec --no-startup-id "rofi -modi 'courses:courses' -show courses -p '' -theme-str 'prompt { enabled: false; }'"
-bindsym $mod+o exec --no-startup-id "alacritty --working-directory $HOME/school/current-course"
-bindsym $mod+p exec --no-startup-id "alacritty -e sh -c 'nnn $HOME/school/current-course'
+bindsym $mod+s exec --no-startup-id "rofi -modi 'semesters:school-setup semesters' -show semesters -p '' -theme-str 'prompt { enabled: false; }'"
+bindsym $mod+c exec --no-startup-id "rofi -modi 'courses:school-setup courses' -show courses -p '' -theme-str 'prompt { enabled: false; }'"
+bindsym $mod+o exec --no-startup-id "alacritty --working-directory $HOME/school/course"
+bindsym $mod+p exec --no-startup-id "alacritty -e sh -c 'nnn $HOME/school/course'
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down

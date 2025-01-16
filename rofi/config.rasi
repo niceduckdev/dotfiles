@@ -4,15 +4,15 @@ configuration {
     drun-display-format: "{name}";
     show-icons: false;
 
- 	kb-row-down: "Alt+j,Down";
-  	kb-row-up: "Alt+k,Up";
-  	kb-move-char-back: "Alt+h,Left";
+ 	kb-row-down: "Alt+j";
+  	kb-row-up: "Alt+k";
+  	kb-move-char-back: "Alt+h";
   	kb-move-char-forward: "Alt+l";
 }
 
 * {
     highlight: none;
-    font: "Fira Code Semibold 24";
+    font: "Fira Code Semibold 20";
 	background: #282828;
 	foreground: #ebdbb2;
 }

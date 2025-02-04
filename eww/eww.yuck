@@ -1,6 +1,7 @@
-(include "modules/workspaces.yuck")
 (include "modules/time.yuck")
 (include "modules/date.yuck")
+
+(include "modules/course.yuck")
 
 (include "modules/volume.yuck")
 (include "modules/battery.yuck")
@@ -10,11 +11,14 @@
     (box :orientation "h" :space-evenly false :halign "start" :spacing 5
         (time)
 		(date)
-		(workspaces)
     )
 )
 
-(defwidget center [] (box :orientation "h" :space-evenly false :halign "center" :spacing 5))
+(defwidget center []
+	(box :orientation "h" :space-evenly false :halign "center" :spacing 5
+		(course)
+	)
+)
 
 (defwidget right []
     (box :orientation "h" :space-evenly false :halign "end" :spacing 5
@@ -35,8 +39,8 @@
 (defwindow bar
     :monitor "<primary>"
     :windowtype "dock"
-    :geometry (geometry :width "100%" :anchor "top center")
-    :reserve (struts :side "top" :distance "3.75%"
+    :geometry (geometry :width "100%" :anchor "bottom center")
+    :reserve (struts :side "bottom" :distance "3.75%"
 )
     (bar)
 )

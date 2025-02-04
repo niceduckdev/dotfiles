@@ -21,7 +21,7 @@ window {
     background-color: @background;
     border: 3px;
     width: 500px;
-    height: 350px;
+    height: 450px;
     padding: 0;
 }
 

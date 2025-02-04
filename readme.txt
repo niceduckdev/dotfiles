@@ -1,1 +1,1 @@
-dotfiles for my fedora install with i3wm and eww
+dotfiles for my linux mint install, uses eww as a bar

@@ -2,7 +2,7 @@
 ###    FONT    ###
 ##################
 [font]
-size = 15
+size = 11
 normal = { family = "FiraCode", style = "SemiBold" }
 
 ####################

@@ -1,9 +1,7 @@
 (defpoll battery :interval "10s" "scripts/battery.sh")
 (defwidget battery []
-	(eventbox :onclick "cinnamon-settings power" :cursor "pointer"
-    	(box :class "module" :space-evenly "false" :spacing "10"
-			(label :text "bat" :class "accent")
-        	(label :text battery)
-    	)
-	)
+   	(box :class "module" :space-evenly "false" :spacing "10"
+		(label :text "bat" :class "accent")
+       	(label :text battery)
+   	)
 )

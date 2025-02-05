@@ -39,4 +39,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt SHARE_HISTORY
-. "/home/kaj/.deno/env"
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+	exec startx $(which bspwm)
+fi

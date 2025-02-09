@@ -1,5 +1,6 @@
 (include "modules/time.yuck")
 (include "modules/date.yuck")
+(include "modules/workspaces.yuck")
 
 (include "modules/course.yuck")
 
@@ -11,6 +12,7 @@
     (box :orientation "h" :space-evenly false :halign "start" :spacing 5
         (time)
 		(date)
+		(workspaces)
     )
 )
 

@@ -10,6 +10,7 @@ clear
 alias ls="eza -l -a"
 alias tree="eza --tree"
 alias vim="nvim"
+alias fcd="find . -type d | fzf"
 
 #######################
 ###    SHORTCUTS    ###

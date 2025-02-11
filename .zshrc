@@ -1,7 +1,7 @@
 ####################
 ###    PROMPT    ###
 ####################
-PS1="%n@%m (%1d) -> "
+PS1="%1d -> "
 clear
 
 #####################
@@ -10,6 +10,7 @@ clear
 alias ls="eza -l -a"
 alias tree="eza --tree"
 alias vim="nvim"
+alias fzf="fzf --bind 'alt-j:down,alt-k:up'"
 alias fcd="find . -type d | fzf"
 
 #######################

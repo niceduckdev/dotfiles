@@ -26,11 +26,11 @@ super + alt + {h,j,k,l}
 	bspc node -s {west,south,north,east}
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -10%
+    amixer set Master 10%- unmute
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +10%
+    amixer set Master 10%+ unmute
 XF86AudioMute
-        pactl list sinks | grep -q Mute:.no && pactl set-sink-mute 0 1 || pactl set-sink-mute 0 0
+    amixer set Master toggle
 
 super + s
 	rofi -modi 'semesters:school-setup semesters' -show semesters -p '' -theme-str 'prompt \{ enabled: false; \}'

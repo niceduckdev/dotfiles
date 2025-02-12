@@ -12,14 +12,7 @@ alias tree="eza --tree"
 alias vim="nvim"
 alias fzf="fzf --bind 'alt-j:down,alt-k:up'"
 alias fcd="find . -type d | fzf"
-
-#######################
-###    SHORTCUTS    ###
-#######################
-alias dotfiles="cd $HOME/dotfiles"
-alias school="cd $HOME/school/semester-2"
-alias chiro="cd $HOME/chiro"
-alias dev="cd $HOME/dev"
+alias poweroff="systemctl poweroff"
 
 ####################
 ###    NEOVIM    ###
@@ -27,15 +20,18 @@ alias dev="cd $HOME/dev"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-#################
-###    ZSH    ###
-#################
+########################
+###    KEYBINDING    ###
+########################
 bindkey "^[[3~" delete-char
-
 bindkey "^[h" backward-char
 bindkey "^[j" down-line-or-history
 bindkey "^[k" up-line-or-history
 bindkey "^[l" forward-char
+
+fzf_cd() { cd "$(find /home/kaj -type d | fzf)"; zle reset-prompt; }
+zle -N fzf_cd
+bindkey "^P" fzf_cd
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000

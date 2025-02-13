@@ -1,1 +1,1 @@
-dotfiles for my linux mint install, uses eww as a bar
+dotfiles for my debian install with bspwm and eww

@@ -10,6 +10,9 @@ super + q
 super + v
 	bspc node focused -t \~floating
 
+super + f
+	 bspc node -t \~fullscreen 
+
 super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 	bspc desktop -f {1-9,10}
 

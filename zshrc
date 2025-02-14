@@ -39,5 +39,6 @@ SAVEHIST=1000
 setopt SHARE_HISTORY
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+	export XCURSOR_SIZE=32
 	exec startx $(which bspwm)
 fi

@@ -41,6 +41,9 @@ super + s
 super + c
 	rofi -modi 'courses:school-setup courses' -show courses -p '' -theme-str 'prompt \{ enabled: false; \}'
 
+super + o
+	pcmanfm /home/kaj/school/course
+
 super + p
 	alacritty --working-directory /home/kaj/school/course
 

@@ -36,10 +36,10 @@ XF86AudioMute
     amixer set Master toggle
 
 super + s
-	rofi -modi 'semesters:school-setup semesters' -show semesters -p '' -theme-str 'prompt \{ enabled: false; \}'
+	rofi -modi 'semesters:school semesters' -show semesters -p '' -theme-str 'prompt \{ enabled: false; \}'
 
 super + c
-	rofi -modi 'courses:school-setup courses' -show courses -p '' -theme-str 'prompt \{ enabled: false; \}'
+	rofi -modi 'courses:school courses' -show courses -p '' -theme-str 'prompt \{ enabled: false; \}'
 
 super + o
 	pcmanfm /home/kaj/school/course

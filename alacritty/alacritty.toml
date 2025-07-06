@@ -2,8 +2,8 @@
 ###    FONT    ###
 ##################
 [font]
-size = 11
-normal = { family = "FiraCode", style = "SemiBold" }
+size = 12
+normal = { family = "Mononoki", style = "Bold" }
 
 ####################
 ###    WINDOW    ###

@@ -5,6 +5,7 @@ xsetroot -cursor_name left_ptr
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom -b
+dunst &
 
 xwallpaper --zoom $HOME/dotfiles/wallpapers/dark.png
 eww open bar

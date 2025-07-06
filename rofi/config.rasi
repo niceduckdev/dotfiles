@@ -12,7 +12,7 @@ configuration {
 
 * {
     highlight: none;
-    font: "Fira Code Semibold 20";
+    font: "Mononoki Bold 20";
 	background: #282828;
 	foreground: #ebdbb2;
 }
@@ -21,7 +21,7 @@ window {
     background-color: @background;
     border: 3px;
     width: 500px;
-    height: 450px;
+    height: 365px;
     padding: 0;
 }
 

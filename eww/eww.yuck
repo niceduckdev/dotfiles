@@ -41,8 +41,8 @@
 (defwindow bar
     :monitor "<primary>"
     :windowtype "dock"
-    :geometry (geometry :width "100%" :anchor "top center")
-    :reserve (struts :side "top" :distance "3.75%"
+    :geometry (geometry :width "100%" :anchor "bottom center")
+    :reserve (struts :side "bottom" :distance "3.75%"
 )
     (bar)
 )

@@ -1,7 +1,0 @@
-(defwidget apps []
-	(eventbox :onclick "rofi -show drun && disown" :cursor "pointer"
-    	(box :class "module" :space-evenly "false" :spacing "10"
-			(label :text "apps" :class "accent")
-    	)
-	)
-)

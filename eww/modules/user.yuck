@@ -1,8 +1,0 @@
-(defpoll user :interval "5m" "scripts/user.sh")
-
-(defwidget user []
-	(box :class "module" :space-evenly "false" :spacing "10"
-		(label :text "usr" :class "accent")
-        (label :text user)
-	)
-)

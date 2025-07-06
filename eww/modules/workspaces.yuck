@@ -1,7 +1,6 @@
-(deflisten active "scripts/workspaces.sh")
+(deflisten workspaces "scripts/workspaces.sh")
 (defwidget workspaces []
-    (box :class "module" :space-evenly "false" :spacing "10"
-		(label :text "wrk" :class "accent")
-        (label :text active)
-	)
+  (box :class "module" :space-evenly "false" :spacing "10"
+    (literal :content workspaces)
+  )
 )

@@ -9,39 +9,38 @@
 (include "modules/network.yuck")
 
 (defwidget left []
-    (box :orientation "h" :space-evenly false :halign "start" :spacing 5
-        (time)
-		(date)
-		(workspaces)
-    )
+  (box :orientation "h" :space-evenly false :halign "start" :spacing 5
+    (workspaces)
+  )
 )
 
 (defwidget center []
-	(box :orientation "h" :space-evenly false :halign "center" :spacing 5
-	)
+  (box :orientation "h" :space-evenly false :halign "center" :spacing 5
+  )
 )
 
 (defwidget right []
-    (box :orientation "h" :space-evenly false :halign "end" :spacing 5
-		(volume)
-        (battery)
-        (network)
-    )
+  (box :orientation "h" :space-evenly false :halign "end" :spacing 5
+    (volume)
+    (network)
+    (battery)
+    (time)
+  )
 )
 
 (defwidget bar []
-    (centerbox :orientation "h"
-        (left)
-        (center)
-        (right)
-    )
+  (centerbox :orientation "h"
+    (left)
+    (center)
+    (right)
+  )
 )
 
 (defwindow bar
-    :monitor "<primary>"
-    :windowtype "dock"
-    :geometry (geometry :width "90%" :anchor "top center")
-    :reserve (struts :side "top" :distance "3.75%"
-)
-    (bar)
+  :monitor "<primary>"
+  :windowtype "dock"
+  :geometry (geometry :width "90%" :anchor "bottom center")
+  :reserve (struts :side "bottom" :distance "3.75%"
+  )
+  (bar)
 )

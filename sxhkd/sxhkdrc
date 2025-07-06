@@ -13,11 +13,11 @@ super + v
 super + f
 	 bspc node -t \~fullscreen 
 
-super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-	bspc desktop -f {1-9,10}
+super + {ampersand,eacute,quotedbl,apostrophe}
+	bspc desktop -f {one,two,three,four}
 
-super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-	bspc node -d {1-9,10} --follow
+super + shift + {ampersand,eacute,quotedbl,apostrophe}
+	bspc node -d {one,two,three,four} --follow
 
 super + {h,j,k,l}
 	bspc node -f {west,south,north,east}

@@ -1,13 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function get_active_workspace() {
-    echo "$(bspc query -D -d focused --names)"
+    bspc query -D -d focused --names
 }
 
-get_active_workspace
+function get_workspaces() {
+    active=$(get_active_workspace)
+    output="(box :spacing 15 :space-evenly false"
 
-bspc subscribe desktop |
-while read -r _; do
-    get_active_workspace
+    for ws in $(bspc query -D --names | xargs); do
+        if [ "$ws" = "$active" ]; then
+            output="$output (label :class 'active' :text '$ws')"
+        else
+            output="$output (label :text '$ws')"
+        fi
+    done
+
+    output="$output)"
+    echo "$output"
+}
+
+get_workspaces
+
+bspc subscribe desktop | while read -r _; do
+    get_workspaces
 done
-

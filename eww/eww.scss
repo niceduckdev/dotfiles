@@ -1,13 +1,13 @@
 * {
     all: unset;
     font-family: "mononoki";
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .bar {
     background-color: #282828;
     color: #ebdbb2;
-    padding: 5px
+    padding: 5px;
 }
 
 .module {
@@ -16,19 +16,10 @@
 }
 
 .accent {
-  color: #d79921;
+    color: #d79921;
 }
 
-.workspace-button {
-	padding: 0 5px;
-}
-
-.empty {
-    color: #756e5a;
-}
-.open {
-    color: #ebdbb2;
-}
-.focus {
-    color: #fe8019;
+.active {
+    color: #d79921;
+    text-decoration: underline;
 }

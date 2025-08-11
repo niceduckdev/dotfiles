@@ -39,7 +39,7 @@
 (defwindow bar
   :monitor "<primary>"
   :windowtype "dock"
-  :geometry (geometry :width "90%" :anchor "bottom center")
+  :geometry (geometry :width "65%" :anchor "bottom center")
   :reserve (struts :side "bottom" :distance "3.75%"
   )
   (bar)

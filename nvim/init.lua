@@ -1,4 +1,4 @@
-require("plugins")
+dofile(vim.fn.stdpath("config") .. "/plugins.lua")
 
 -- ui config
 vim.opt.tabstop = 4

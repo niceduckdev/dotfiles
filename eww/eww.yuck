@@ -25,6 +25,7 @@
     (network)
     (battery)
     (time)
+	(date)
   )
 )
 
@@ -39,7 +40,7 @@
 (defwindow bar
   :monitor "<primary>"
   :windowtype "dock"
-  :geometry (geometry :width "65%" :anchor "bottom center")
+  :geometry (geometry :width "80%" :anchor "bottom center")
   :reserve (struts :side "bottom" :distance "3.75%"
   )
   (bar)

@@ -9,10 +9,10 @@ function get_workspaces() {
     output="(box :spacing 15 :space-evenly false"
 
     for ws in $(bspc query -D --names | xargs); do
-        if [ "$ws" = "$active" ]; then
+	  	if [ "$ws" = "$active" ]; then
             output="$output (label :class 'active' :text '$ws')"
         else
-            output="$output (label :text '$ws')"
+            output="$output (eventbox :cursor 'pointer' :onclick 'bspc desktop -f $ws' (label :text '$ws'))"
         fi
     done
 

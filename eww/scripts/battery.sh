@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 battery_path="/sys/class/power_supply/BAT0"
 state=$(cat "$battery_path/status")

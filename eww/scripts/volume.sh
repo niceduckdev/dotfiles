@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 [ -n "$command" ] && amixer set Master $command
 mute=$(amixer get Master | grep '\[off\]')

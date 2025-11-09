@@ -1,5 +1,5 @@
 super + t
-	/usr/bin/alacritty
+	alacritty
 
 super + @space
 	rofi -show drun
@@ -40,9 +40,6 @@ super + s
 
 super + c
 	rofi -modi 'courses:school courses' -show courses -p '' -theme-str 'prompt \{ enabled: false; \}'
-
-super + o
-	pcmanfm /home/kaj/school/course
 
 super + p
 	alacritty --working-directory /home/kaj/school/course

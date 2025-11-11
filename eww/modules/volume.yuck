@@ -1,4 +1,4 @@
-(defpoll volume :interval "0.1s" "scripts/volume.sh")
+(defpoll volume :interval "0.1s" "bar-modules volume")
 (defwidget volume []
 	(eventbox :onclick "amixer -q sset Master toggle" :cursor "pointer"
     	(box :class "module" :space-evenly "false" :spacing "10"

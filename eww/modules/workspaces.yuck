@@ -1,4 +1,4 @@
-(deflisten workspaces "scripts/workspaces.sh")
+(deflisten workspaces "bar-modules workspaces")
 (defwidget workspaces []
   (box :class "module" :space-evenly "false" :spacing "10"
     (literal :content workspaces)

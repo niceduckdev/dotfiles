@@ -20,8 +20,10 @@ function get_workspaces() {
     echo "$output"
 }
 
-get_workspaces
+workspaces_module() {
+	get_workspaces
 
-bspc subscribe desktop | while read -r _; do
-    get_workspaces
-done
+	bspc subscribe desktop | while read -r _; do
+		get_workspaces
+	done
+}

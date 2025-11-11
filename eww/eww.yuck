@@ -2,8 +2,6 @@
 (include "modules/date.yuck")
 (include "modules/workspaces.yuck")
 
-(include "modules/course.yuck")
-
 (include "modules/volume.yuck")
 (include "modules/battery.yuck")
 (include "modules/network.yuck")

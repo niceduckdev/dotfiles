@@ -9,6 +9,7 @@
     		enable = true;
     		generateScript = true;
   		};
+
   		xkb.layout = "be";
 	};
 

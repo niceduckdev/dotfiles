@@ -36,10 +36,10 @@ XF86AudioMute
     amixer set Master toggle
 
 super + s
-	rofi -modi 'semesters:school semesters' -show semesters -p '' -theme-str 'prompt \{ enabled: false; \}'
+	rofi -modi 'semesters:setup-for-college semesters' -show semesters -p '' -theme-str 'prompt \{ enabled: false; \}'
 
 super + c
-	rofi -modi 'courses:school courses' -show courses -p '' -theme-str 'prompt \{ enabled: false; \}'
+	rofi -modi 'courses:setup-for-college courses' -show courses -p '' -theme-str 'prompt \{ enabled: false; \}'
 
 super + p
 	alacritty --working-directory /home/kaj/school/course

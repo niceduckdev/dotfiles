@@ -1,6 +1,7 @@
 #!/bin/sh
 
 setxkbmap be
+xsetroot -cursor_name macOS
 xsetroot -cursor_name left_ptr
 
 pgrep -x sxhkd > /dev/null || sxhkd &

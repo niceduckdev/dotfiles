@@ -8,6 +8,9 @@ configuration {
   	kb-row-up: "Alt+k";
   	kb-move-char-back: "Alt+h";
   	kb-move-char-forward: "Alt+l";
+
+	cursor-theme: "macOS";
+    cursor-size: 24;
 }
 
 * {

@@ -2,8 +2,8 @@
 
 {
 	environment.systemPackages = with pkgs; [
-		eza git alacritty librewolf unzip xclip
-		discord
+    	eza git alacritty librewolf unzip xclip
+    	discord
   	];
 
   	programs.neovim = {

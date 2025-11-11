@@ -1,7 +1,3 @@
-# import functions
-source /home/kaj/dotfiles/scripts/open-finder.zsh
-source /home/kaj/dotfiles/scripts/open-git.zsh
-
 # prompt
 setopt prompt_subst
 PS1='$(basename "$PWD")$(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && echo " ($(git symbolic-ref --short HEAD 2>/dev/null))") -> '
@@ -26,11 +22,14 @@ bindkey "^[j" down-line-or-history
 bindkey "^[k" up-line-or-history
 bindkey "^[l" forward-char
 
+# open file picker
+open_finder() {
+    cd "$(find $(pwd) -type d | fzf)" || return
+    zle reset-prompt
+}
+
 zle -N open_finder
 bindkey "^P" open_finder
-
-zle -N open_git
-bindkey "^G" open_git
 
 # history
 HISTFILE=$HOME/.zsh/.zsh_history

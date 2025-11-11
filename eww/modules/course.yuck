@@ -1,9 +1,0 @@
-(defpoll course :interval "10s" "school current")
-(defwidget course []
-	(eventbox :onclick "alacritty --working-directory /home/kaj/school/course" :cursor "pointer"
-    	(box :class "module" :space-evenly "false" :spacing "10"
-			(label :text "crs" :class "accent")
-        	(label :text course)
-    	)
-	)
-)

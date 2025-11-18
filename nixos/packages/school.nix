@@ -6,5 +6,6 @@ let
 in {
 	environment.systemPackages = with pkgs; [
     	setup-for-college jetbrains.idea-ultimate
+		vscodium nodejs
   	];
 }

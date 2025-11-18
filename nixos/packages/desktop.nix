@@ -6,8 +6,8 @@ let
 in {
 	environment.systemPackages = with pkgs; [
     	bspwm sxhkd rofi picom xwallpaper
-		eww alsa-utils brightnessctl 
-		bar-modules
+		eww alsa-utils brightnessctl maim
+		ufetch bar-modules capitaine-cursors
 	];
 
 	services.xserver.excludePackages = with pkgs; [ xterm ];

@@ -1,7 +1,10 @@
 #!/bin/sh
 
+export XCURSOR_THEME=capitaine-cursors
+export XCURSOR_SIZE=24
+xrdb -merge ~/.Xresources
+
 setxkbmap be
-xsetroot -cursor_name macOS
 xsetroot -cursor_name left_ptr
 
 pgrep -x sxhkd > /dev/null || sxhkd &

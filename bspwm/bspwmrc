@@ -1,7 +1,7 @@
 #!/bin/sh
 
-export XCURSOR_THEME=capitaine-cursors
-export XCURSOR_SIZE=24
+export XCURSOR_THEME=macOS
+export XCURSOR_SIZE=32
 xrdb -merge ~/.Xresources
 
 setxkbmap be

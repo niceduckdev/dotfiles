@@ -7,7 +7,7 @@ in {
 	environment.systemPackages = with pkgs; [
     	bspwm sxhkd rofi picom xwallpaper
 		eww alsa-utils brightnessctl maim
-		ufetch bar-modules capitaine-cursors
+		ufetch bar-modules apple-cursor
 	];
 
 	services.xserver.excludePackages = with pkgs; [ xterm ];

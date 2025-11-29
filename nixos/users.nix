@@ -4,7 +4,7 @@
 	users.users.kaj = {
     	isNormalUser = true;
     	description = "kaj";
-    	extraGroups = [ "networkmanager" "wheel" ];
+    	extraGroups = [ "networkmanager" "wheel"  "docker"];
     	shell = pkgs.zsh;
   	};
 

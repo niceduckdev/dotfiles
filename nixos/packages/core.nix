@@ -2,7 +2,7 @@
 
 {
 	environment.systemPackages = with pkgs; [
-    	eza git alacritty librewolf unzip xclip
+    	eza fzf git alacritty librewolf unzip xclip
     	discord
   	];
 

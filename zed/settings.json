@@ -1,0 +1,41 @@
+{
+    /* appearance: editor */
+    "theme": "Gruvbox Dark",
+    "buffer_font_family": "mononoki",
+    "buffer_font_size": 28,
+    "cursor_blink": false,
+    "hide_mouse": "never",
+    "middle_click_paste": false,
+    "use_system_prompts": false,
+    "tab_size": 4,
+    "ui_font_size": 24,
+    "ui_font_family": "mononoki",
+    "file_finder": { "modal_max_width": "medium" },
+
+    /* config */
+    "disable_ai": true,
+    "vim_mode": true,
+    "telemetry": { "metrics": false, "diagnostics": false },
+    "features": { "edit_prediction_provider": "none" },
+
+    /* appearance: bars */
+    "tab_bar": {
+        "show_tab_bar_buttons": false,
+        "show_nav_history_buttons": false
+    },
+
+    "toolbar": { "breadcrumbs": false, "quick_actions": false },
+    "scrollbar": { "show": "never" },
+    "title_bar": { "show_sign_in": false },
+
+    /* appearance: panels */
+    "project_panel": { "button": false, "dock": "right", "git_status": true },
+    "git_panel": { "button": false, "dock": null },
+    "outline_panel": { "button": false, "dock": null },
+    "notification_panel": { "button": false, "dock": null },
+    "collaboration_panel": { "button": false, "dock": null },
+    "diagnostics": { "button": false, "dock": null },
+    "search": { "button": false, "dock": null },
+    "terminal": { "button": false, "font_size": 24, "cursor_shape": "bar" },
+    "agent": { "version": "1", "button": false, "dock": null }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+        "bindings": {
+            "ctrl-w": "pane::CloseActiveItem"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+        "bindings": {
+            "ctrl-k c": "editor::ToggleComments"
+        }
+    },
+    {
+        "bindings": {
+            "alt-j": "menu::SelectNext",
+            "alt-k": "menu::SelectPrevious"
+        }
+    },
+    {
+        "context": "Editor && (showing_code_actions || showing_completions)",
+        "bindings": {
+            "alt-j": "editor::ContextMenuNext",
+            "alt-k": "editor::ContextMenuPrev"
+        }
+    }
+]

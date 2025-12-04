@@ -9,5 +9,14 @@ in {
 		zed-editor nodejs antlr4
   	];
 	
-	virtualisation.docker.enable = true;
+	virtualisation.docker = {
+		enable = true;
+
+		daemon.settings = {
+    		experimental = true;
+			features = {
+				buildkit = true;
+			};
+  		};
+	};
 }

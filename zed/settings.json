@@ -23,6 +23,9 @@
         "show_tab_bar_buttons": false,
         "show_nav_history_buttons": false
     },
+    "tabs": {
+        "file_icons": true
+    },
 
     "toolbar": { "breadcrumbs": false, "quick_actions": false },
     "scrollbar": { "show": "never" },

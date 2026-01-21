@@ -7,8 +7,9 @@ function get_active_workspace() {
 function get_workspaces() {
     active=$(get_active_workspace)
     output="(box :spacing 15 :space-evenly false"
+	workspaces="one two three four five six seven eight nine ten"
 
-    for ws in $(swaymsg -t get_workspaces | jq -r '.[].name' | sort -n); do
+    for ws in $workspaces; do
         if [ "$ws" = "$active" ]; then
             output="$output (eventbox :cursor 'pointer' :onclick 'swaymsg workspace $ws' (label :class 'active' :text '$ws'))"
         else
@@ -27,3 +28,5 @@ workspaces_module() {
         get_workspaces
     done
 }
+
+workspaces_module

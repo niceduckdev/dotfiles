@@ -1,0 +1,97 @@
+# startup
+exec_always --no-startup-id wl-paste --type text --watch cliphist store
+exec_always --no-startup-id wl-paste --type image --watch cliphist store
+
+exec_always eww close-all
+exec_always eww open bar
+
+# variables
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+
+# decoration
+output * bg /home/kaj/dotfiles/wallpapers/dark.png fill
+seat seat0 xcursor_theme macOS 32
+
+default_border pixel 3
+default_floating_border pixel 3
+
+gaps inner 10
+gaps outer 4
+
+client.focused #EBDBB2 #282828 #FE8019 #EBDBB2 #EBDBB2
+client.focused_inactive #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.unfocused #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.urgent #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.placeholder #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
+client.background #282828
+
+# input
+input * {
+	xkb_layout "be"
+}
+
+focus_follows_mouse no
+bindsym $mod+t exec alacritty
+bindsym $mod+q kill
+bindsym $mod+Space exec rofi -show drun
+floating_modifier $mod normal
+
+bindsym $mod+Shift+c reload
+
+bindsym $mod+$right focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$left focus right
+
+bindsym $mod+Shift+$right move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$left move right
+
+bindsym $mod+Ampersand workspace number 1
+bindsym $mod+Eacute workspace number 2
+bindsym $mod+Quotedbl workspace number 3
+bindsym $mod+Apostrophe workspace number 4
+bindsym $mod+Parenleft workspace number 5
+bindsym $mod+Section workspace number 6
+bindsym $mod+Egrave workspace number 7
+bindsym $mod+Exclam workspace number 8
+bindsym $mod+Ccedilla workspace number 9
+bindsym $mod+Agrave workspace number 10
+
+bindsym $mod+Shift+Ampersand move container to workspace number 1
+bindsym $mod+Shift+Eacute move container to workspace number 2
+bindsym $mod+Shift+Quotedbl move container to workspace number 3
+bindsym $mod+Shift+Apostrophe move container to workspace number 4
+bindsym $mod+Shift+Parenleft move container to workspace number 5
+bindsym $mod+Shift+Section move container to workspace number 6
+bindsym $mod+Shift+Egrave move container to workspace number 7
+bindsym $mod+Shift+Exclam move container to workspace number 8
+bindsym $mod+Shift+Ccedilla move container to workspace number 9
+bindsym $mod+Shift+Agrave move container to workspace number 10
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+bindsym $mod+f floating toggle
+
+bindsym $mod+r mode "resize"
+
+mode "resize" {
+    bindsym $left resize grow width 50px
+    bindsym $down resize grow height 50px
+    bindsym $up resize shrink height 50px
+    bindsym $right resize shrink width 50px
+    bindsym Escape mode "default"
+}
+
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -10%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +10%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 25%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 25%+
+bindsym Print exec slurp | grim -g - - | wl-copy

@@ -3,7 +3,7 @@
 {
 	environment.systemPackages = with pkgs; [
     	eza fzf git alacritty librewolf unzip xclip
-    	discord
+    	discord grim slurp wl-clipboard cliphist jq
   	];
 
   	programs.neovim = {

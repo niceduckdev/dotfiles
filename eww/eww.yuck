@@ -36,10 +36,11 @@
 )
 
 (defwindow bar
-  :monitor "<primary>"
+  :monitor "0"
   :windowtype "dock"
   :geometry (geometry :width "80%" :anchor "bottom center")
-  :reserve (struts :side "bottom" :distance "3.75%"
-  )
+  :exclusive true
+  :stacking "fg"
+  :focusable false
   (bar)
 )

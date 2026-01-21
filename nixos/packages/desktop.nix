@@ -5,10 +5,9 @@ let
 	bar-modules = bar-modules-flake.packages.x86_64-linux.bar-modules; 
 in {
 	environment.systemPackages = with pkgs; [
-    	bspwm sxhkd rofi picom xwallpaper
-		eww alsa-utils brightnessctl maim
+    	rofi-wayland eww alsa-utils brightnessctl
 		ufetch bar-modules apple-cursor
 	];
 
-	services.xserver.excludePackages = with pkgs; [ xterm ];
+	services.xserver.excludePackages = with pkgs; [ xterm foot ];
 }

@@ -43,5 +43,5 @@ export ZSH_COMPDUMP=$HOME/.zsh/.zcompdump-$HOST
 # tty autostart
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	export XCURSOR_SIZE=32
-	exec startx $(which bspwm)
+	exec sway
 fi

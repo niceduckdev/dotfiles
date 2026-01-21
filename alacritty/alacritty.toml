@@ -1,11 +1,11 @@
 # font
 [font]
-size = 14
+size = 24
 normal = { family = "Mononoki", style = "Bold" }
 
 # window
 [window]
-padding = { x = 10, y = 10 }
+padding = { x = 14, y = 14 }
 
 # cursor
 [cursor]

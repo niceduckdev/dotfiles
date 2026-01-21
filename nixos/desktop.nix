@@ -1,17 +1,12 @@
 { config, pkgs, ... }:
 
 {
-	services.xserver = {
-		enable = true;
 
-		desktopManager.xterm.enable = false;
-  		displayManager.startx = {
-    		enable = true;
-    		generateScript = true;
-  		};
-
-  		xkb.layout = "be";
-	};
+	services.gnome.gnome-keyring.enable = true;
+	programs.sway = {
+    	enable = true;
+    	wrapperFeatures.gtk = true;
+  	};
 
 	environment.variables.TERMINAL = "alacritty";
   

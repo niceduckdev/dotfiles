@@ -19,8 +19,7 @@ seat seat0 xcursor_theme macOS 32
 default_border pixel 3
 default_floating_border pixel 3
 
-gaps inner 10
-gaps outer 4
+gaps inner 6
 
 client.focused #EBDBB2 #282828 #FE8019 #EBDBB2 #EBDBB2
 client.focused_inactive #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
@@ -52,27 +51,27 @@ bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$left move right
 
-bindsym $mod+Ampersand workspace number 1
-bindsym $mod+Eacute workspace number 2
-bindsym $mod+Quotedbl workspace number 3
-bindsym $mod+Apostrophe workspace number 4
-bindsym $mod+Parenleft workspace number 5
-bindsym $mod+Section workspace number 6
-bindsym $mod+Egrave workspace number 7
-bindsym $mod+Exclam workspace number 8
-bindsym $mod+Ccedilla workspace number 9
-bindsym $mod+Agrave workspace number 10
+bindsym $mod+Ampersand workspace one
+bindsym $mod+Eacute workspace two
+bindsym $mod+Quotedbl workspace three
+bindsym $mod+Apostrophe workspace four
+bindsym $mod+Parenleft workspace five
+bindsym $mod+Section workspace six
+bindsym $mod+Egrave workspace seven
+bindsym $mod+Exclam workspace eight
+bindsym $mod+Ccedilla workspace nine
+bindsym $mod+Agrave workspace ten
 
-bindsym $mod+Shift+Ampersand move container to workspace number 1
-bindsym $mod+Shift+Eacute move container to workspace number 2
-bindsym $mod+Shift+Quotedbl move container to workspace number 3
-bindsym $mod+Shift+Apostrophe move container to workspace number 4
-bindsym $mod+Shift+Parenleft move container to workspace number 5
-bindsym $mod+Shift+Section move container to workspace number 6
-bindsym $mod+Shift+Egrave move container to workspace number 7
-bindsym $mod+Shift+Exclam move container to workspace number 8
-bindsym $mod+Shift+Ccedilla move container to workspace number 9
-bindsym $mod+Shift+Agrave move container to workspace number 10
+bindsym $mod+Shift+Ampersand move container to workspace one
+bindsym $mod+Shift+Eacute move container to workspace two
+bindsym $mod+Shift+Quotedbl move container to workspace three
+bindsym $mod+Shift+Apostrophe move container to workspace four
+bindsym $mod+Shift+Parenleft move container to workspace five
+bindsym $mod+Shift+Section move container to workspace six
+bindsym $mod+Shift+Egrave move container to workspace seven
+bindsym $mod+Shift+Exclam move container to workspace eight
+bindsym $mod+Shift+Ccedilla move container to workspace nine
+bindsym $mod+Shift+Agrave move container to workspace ten
 
 bindsym $mod+b splith
 bindsym $mod+v splitv

@@ -28,5 +28,3 @@ workspaces_module() {
         get_workspaces
     done
 }
-
-workspaces_module

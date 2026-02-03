@@ -13,7 +13,7 @@ set $up k
 set $right l
 
 # decoration
-output * bg /home/kaj/dotfiles/wallpapers/dark.png fill
+output * bg #121212 solid_color
 seat seat0 xcursor_theme macOS 32
 
 default_border pixel 3
@@ -21,12 +21,12 @@ default_floating_border pixel 3
 
 gaps inner 6
 
-client.focused #EBDBB2 #282828 #FE8019 #EBDBB2 #EBDBB2
-client.focused_inactive #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
-client.unfocused #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
-client.urgent #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
-client.placeholder #3C3836 #282828 #EBDBB2 #3C3836 #3C3836
-client.background #282828
+client.focused           #ffba7b #121212 #dedede #ffba7b #ffba7b
+client.focused_inactive  #121212 #121212 #dedede #121212 #121212
+client.unfocused         #121212 #121212 #929292 #121212 #121212
+client.urgent            #e27373 #121212 #ffffff #e27373 #e27373
+client.placeholder       #121212 #121212 #929292 #121212 #121212
+client.background        #121212
 
 # input
 input * {
@@ -56,22 +56,12 @@ bindsym $mod+Eacute workspace two
 bindsym $mod+Quotedbl workspace three
 bindsym $mod+Apostrophe workspace four
 bindsym $mod+Parenleft workspace five
-bindsym $mod+Section workspace six
-bindsym $mod+Egrave workspace seven
-bindsym $mod+Exclam workspace eight
-bindsym $mod+Ccedilla workspace nine
-bindsym $mod+Agrave workspace ten
 
-bindsym $mod+Shift+Ampersand move container to workspace one
-bindsym $mod+Shift+Eacute move container to workspace two
-bindsym $mod+Shift+Quotedbl move container to workspace three
-bindsym $mod+Shift+Apostrophe move container to workspace four
-bindsym $mod+Shift+Parenleft move container to workspace five
-bindsym $mod+Shift+Section move container to workspace six
-bindsym $mod+Shift+Egrave move container to workspace seven
-bindsym $mod+Shift+Exclam move container to workspace eight
-bindsym $mod+Shift+Ccedilla move container to workspace nine
-bindsym $mod+Shift+Agrave move container to workspace ten
+bindsym $mod+Shift+Ampersand move container to workspace one; workspace one
+bindsym $mod+Shift+Eacute move container to workspace two; workspace two
+bindsym $mod+Shift+Quotedbl move container to workspace three; workspace three
+bindsym $mod+Shift+Apostrophe move container to workspace four; workspace four
+bindsym $mod+Shift+Parenleft move container to workspace five; workspace five
 
 bindsym $mod+b splith
 bindsym $mod+v splitv
@@ -81,8 +71,8 @@ bindsym $mod+r mode "resize"
 
 mode "resize" {
     bindsym $left resize grow width 50px
-    bindsym $down resize grow height 50px
-    bindsym $up resize shrink height 50px
+    bindsym $up resize grow height 50px
+    bindsym $down resize shrink height 50px
     bindsym $right resize shrink width 50px
     bindsym Escape mode "default"
 }
@@ -94,3 +84,4 @@ bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ t
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 25%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 25%+
 bindsym Print exec slurp | grim -g - - | wl-copy
+bindsym $mod+Shift+p exec wl-color-picker clipboard 

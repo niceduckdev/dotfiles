@@ -9,5 +9,5 @@ in {
 		ufetch bar-modules apple-cursor
 	];
 
-	services.xserver.excludePackages = with pkgs; [ xterm foot ];
+	programs.foot.enable = false;
 }

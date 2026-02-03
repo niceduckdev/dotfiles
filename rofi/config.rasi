@@ -16,8 +16,9 @@ configuration {
 * {
     highlight: none;
     font: "Mononoki Bold 20";
-	background: #282828;
-	foreground: #ebdbb2;
+	background: #121212;
+	foreground: #dedede;
+	accent: #ffba7b;
 }
 
 window {
@@ -43,8 +44,8 @@ element.normal.normal {
 }
 
 element.selected.normal {
-	background-color: #282828;
-    text-color: #d79921;
+	background-color: @background;
+    text-color: @accent;
 }
 
 element.alternate.normal {

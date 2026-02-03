@@ -7,7 +7,7 @@ function get_active_workspace() {
 function get_workspaces() {
     active=$(get_active_workspace)
     output="(box :spacing 15 :space-evenly false"
-	workspaces="one two three four five six seven eight nine ten"
+	workspaces="one two three four five"
 
     for ws in $workspaces; do
         if [ "$ws" = "$active" ]; then

@@ -17,5 +17,6 @@
 	environment.etc."issue".text = "logging in to laptoep\n";
 
   	services.tlp.enable = true;
+	services.udisks2.enable = true;
 	fonts.packages = with pkgs; [ mononoki ];
 }

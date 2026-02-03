@@ -16,7 +16,7 @@
             "alt-j": "menu::SelectNext",
             "alt-k": "menu::SelectPrevious",
             "ctrl-b": "workspace::ToggleRightDock",
-            "ctrl-t": "workspace::ToggleBottomDock"
+            "ctrl-t": null
         }
     },
     {

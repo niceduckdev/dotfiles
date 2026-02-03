@@ -6,18 +6,7 @@ let
 in {
 	environment.systemPackages = with pkgs; [
     	setup-for-college jetbrains.idea-ultimate
-		zed-editor nodejs antlr4 postgresql_17_jit
+		antlr4 postgresql_17_jit
 		teams-for-linux
   	];
-	
-	virtualisation.docker = {
-		enable = true;
-
-		daemon.settings = {
-    		experimental = true;
-			features = {
-				buildkit = true;
-			};
-  		};
-	};
 }

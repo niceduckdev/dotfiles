@@ -12,6 +12,7 @@
     	./packages/core.nix
     	./packages/desktop.nix
 		./packages/school.nix
+		./packages/dev.nix
   	];
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -1,6 +1,6 @@
 {
     /* appearance: editor */
-    "theme": "Gruvbox Dark",
+    "theme": "Jellybeans",
     "buffer_font_family": "mononoki",
     "buffer_font_size": 28,
     "cursor_blink": false,
@@ -11,6 +11,7 @@
     "ui_font_size": 24,
     "ui_font_family": "mononoki",
     "file_finder": { "modal_max_width": "medium" },
+    "soft_wrap": "editor_width",
 
     /* config */
     "disable_ai": true,
@@ -39,6 +40,6 @@
     "collaboration_panel": { "button": false, "dock": null },
     "diagnostics": { "button": false, "dock": null },
     "search": { "button": false, "dock": null },
-    "terminal": { "button": false, "font_size": 24, "cursor_shape": "bar" },
+    "terminal": { "button": false },
     "agent": { "version": "1", "button": false, "dock": null }
 }

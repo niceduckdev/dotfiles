@@ -13,25 +13,33 @@ style = { shape = "Beam" }
 
 # colorscheme
 [colors.primary]
-background = '#282828'
-foreground = '#ebdbb2'
+foreground = "#dedede"
+background = "#121212"
+
+[colors.cursor]
+text = "#ffffff"
+cursor = "#ffa560"
+
+[colors.selection]
+text = "#f4f4f4"
+background = "#474e91"
 
 [colors.normal]
-black   = '#282828'
-red     = '#cc241d'
-green   = '#98971a'
-yellow  = '#d79921'
-blue    = '#458588'
-magenta = '#b16286'
-cyan    = '#689d6a'
-white   = '#a89984'
+black = "#929292"
+red = "#e27373"
+green = "#94b979"
+yellow = "#ffba7b"
+blue = "#97bedc"
+magenta = "#e1c0fa"
+cyan = "#00988e"
+white = "#dedede"
 
 [colors.bright]
-black   = '#928374'
-red     = '#fb4934'
-green   = '#b8bb26'
-yellow  = '#fabd2f'
-blue    = '#83a598'
-magenta = '#d3869b'
-cyan    = '#8ec07c'
-white   = '#ebdbb2'
+black = "#bdbdbd"
+red = "#ffa1a1"
+green = "#bddeab"
+yellow = "#ffdca0"
+blue = "#b1d8f6"
+magenta = "#fbdaff"
+cyan = "#1ab2a8"
+white = "#ffffff"

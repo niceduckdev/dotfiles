@@ -1,0 +1,7 @@
+[user]
+	email = bottykaj@gmail.com
+	name = niceduckdev
+[init]
+	defaultBranch = main
+[includeIf "gitdir:/home/kaj/school/"]
+	path = /home/kaj/.gitconfig-school

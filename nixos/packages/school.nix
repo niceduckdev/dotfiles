@@ -5,7 +5,7 @@ let
 	setup-for-college = setup-for-college-flake.packages.x86_64-linux.setup-for-college;
 in {
 	environment.systemPackages = with pkgs; [
-    	setup-for-college jetbrains.idea-ultimate
+    	setup-for-college
 		antlr4 postgresql_17_jit
 		teams-for-linux
   	];

@@ -1,11 +1,10 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
 	environment.systemPackages = with pkgs; [
-    	eza fzf git alacritty librewolf unzip xclip
-    	discord grim slurp wl-clipboard cliphist jq
-		udiskie
-  	];
+  		eza fzf git alacritty librewolf
+		discord	spotify
+	];
 
   	programs.neovim = {
     	enable = true;

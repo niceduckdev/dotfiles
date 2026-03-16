@@ -1,6 +1,6 @@
 # font
 [font]
-size = 24
+size = 18
 normal = { family = "Mononoki", style = "Bold" }
 
 # window

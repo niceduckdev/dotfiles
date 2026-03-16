@@ -1,22 +1,28 @@
 { config, pkgs, ... }:
 
 {
+    services.xserver.displayManager.gdm = {
+        enable = true;
+        wayland = true;
+    };
 
-	services.gnome.gnome-keyring.enable = true;
-	programs.sway = {
-    	enable = true;
-    	wrapperFeatures.gtk = true;
+  	services.xserver = {
+    	layout = "be";
   	};
 
-	environment.variables.TERMINAL = "alacritty";
-  
-	security.sudo.extraConfig = ''
-    	Defaults pwfeedback
-  	'';
+    services.xserver.desktopManager.gnome.enable = true;
+    services.gnome.core-developer-tools.enable = false;
+    services.gnome.games.enable = false;
+    environment.gnome.excludePackages = with pkgs; [
+        gnome-tour gnome-user-docs
+        epiphany gedit
+    ];
 
-	environment.etc."issue".text = "logging in to laptoep\n";
+    environment.variables.TERMINAL = "alacritty";
 
-  	services.tlp.enable = true;
-	services.udisks2.enable = true;
-	fonts.packages = with pkgs; [ mononoki ];
+    security.sudo.extraConfig = ''
+        Defaults pwfeedback
+    '';
+    environment.etc."issue".text = "logging in to laptoep\n";
+    fonts.packages = with pkgs; [ mononoki texlivePackages.nunito ];
 }

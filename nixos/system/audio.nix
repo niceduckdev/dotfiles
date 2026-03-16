@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
-	services.pulseaudio.enable = true;
-	services.pipewire.enable = false;
+    services.pipewire = {
+        enable = true;
+        alsa.enable = true;
+        pulse.enable = true;
+		wireplumber.enable = true;
+    };
 }

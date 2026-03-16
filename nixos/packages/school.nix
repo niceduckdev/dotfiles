@@ -7,6 +7,6 @@ in {
 	environment.systemPackages = with pkgs; [
     	setup-for-college
 		antlr4 postgresql_17_jit
-		teams-for-linux
+		teams-for-linux openssl
   	];
 }

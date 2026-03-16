@@ -2,7 +2,7 @@
 
 {
 	environment.systemPackages = with pkgs; [
-		zed-editor nodejs go just
+		zed-editor nodejs go just goose
   	];
 	
 	virtualisation.docker = {
